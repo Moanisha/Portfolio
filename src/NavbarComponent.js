@@ -18,6 +18,9 @@ function NavbarComponent() {
           <NavLink to="about" className="nav-link">
             About
           </NavLink>
+          <NavLink to="timeline" className="nav-link">
+            Timeline
+          </NavLink>
           <NavLink to="projects" className="nav-link">
             Projects
           </NavLink>

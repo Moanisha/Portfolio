@@ -8,6 +8,7 @@ import mongodb from "./Assets/mongodb.png";
 import postgresql from "./Assets/postgresql.png";
 import aws from "./Assets/aws.png";
 import javascript from "./Assets/javascript.png";
+import ResumeDownload from "./ResumeDownload";
 
 const SkillCard = ({ imageSrc }) => {
   return (
@@ -38,6 +39,7 @@ const AboutCard = () => {
         compatibility, ensuring a consistent and smooth user experience across
         various web browsers."
       </div>
+      <ResumeDownload />
     </div>
   );
 };

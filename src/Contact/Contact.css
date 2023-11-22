@@ -1,0 +1,127 @@
+.contact-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74vh;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    /* Set maximum width for responsiveness */
+}
+
+.left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    width: 300px;
+    /* Adjust the size of the profile image */
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Maintain aspect ratio */
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3b5998;
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    width: 100%;
+    /* Cover the entire width */
+    padding: 10px;
+    /* Reduced padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    height: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #293e69;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .contact-me {
+        flex-direction: column;
+        /* Display items vertically */
+        align-items: center;
+    margin-top: 240px;
+
+    }
+
+    .left-panel {
+        order: 2;
+        /* Move left panel below the right panel */
+        margin-bottom: 30px;
+        /* Add some space between the panels */
+    }
+
+    .right-panel {
+        order: 1;
+        /* Move right panel above the left panel */
+    }
+
+    .contact-form {
+        width: 100%;
+        margin-bottom: 0;
+        /* Remove the margin at the bottom */
+        height: auto;
+        /* Allow form height to adjust */
+    }
+}
